@@ -9,12 +9,12 @@ services:
       # حط توكن التليجرام هنا - من @BotFather
       - key: BOT_TOKEN
         value: "7761137248:AAHYgrn_eYOp3XUqM3ln0WRS0LHYTnQTO7g"
-        sync: false
+        sync: true
       
       # حط مفتاح Groq API هنا - من console.groq.com
       - key: GROQ_API_KEY
         value: "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"
-        sync: false
+        sync: true
       
       # إصدار Python
       - key: PYTHON_VERSION
