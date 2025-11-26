@@ -1,0 +1,22 @@
+services:
+  - type: web
+    name: telegram-student-bot
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: python bot.py
+    envVars:
+      # حط توكن التليجرام هنا - من @BotFather
+      - key: BOT_TOKEN
+        value: "7761137248:AAHYgrn_eYOp3XUqM3ln0WRS0LHYTnQTO7g"
+        sync: false
+      
+      # حط مفتاح Groq API هنا - من console.groq.com
+      - key: GROQ_API_KEY
+        value: "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"
+        sync: false
+      
+      # إصدار Python
+      - key: PYTHON_VERSION
+        value: 3.11.0
+        
